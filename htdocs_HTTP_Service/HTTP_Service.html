@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello Boss</title>
+    <meta charset='utf-8'>
+</head>
+
+<body>
+    <h1>Introduce the data of your new employee: </h1>
+    <div>
+        <input id="employee_name_create" type="text" placeholder="Name" />
+        <br />
+        <form name="create" type="text">
+            <br />
+            <!-- Lista de selección -->
+            Choose a role
+            <select id="employee_role_create">
+                <!-- Opciones de la lista -->
+                <option value="Thief">Thief</option>
+                <option value="Burglar">Burglar</option>
+                <option value="Mage">Mage</option>
+            </select>
+        </form>
+        <br />
+        <button id="button" onclick="crear()">Create</button>
+    </div>
+    <br />
+
+    <h1>Introduce an employee ID to modify or to erase: </h1>
+    <div>
+        <input id="employee_id_modify" type="number" placeholder="ID" />
+
+        <button id="button" onclick="update()">Modify</button>
+        <button id="button" onclick="delete_()">Erase</button>
+    </div>
+    <br />
+
+    <h1>Introduce the name, the ID or the role of the employee/s to show the whole data: </h1>
+    <div>
+        <input id="employee_id" type="number" placeholder="ID" />
+        <button id="button" onclick="readPerId()">Mostrar</button>
+        <br />
+        <br />
+
+        <input id="employee_name" type="text" placeholder="Name" />
+        <button id="button" onclick="readPerName()">Show</button>
+        <br />
+        <br />
+        (If you don't remember all the names of your incredibly large enterprise you could click the button below:)
+        <br />
+        <br />
+
+        <button id="button" onclick="showNames()">Show name list</button>
+        <br />
+        <p class="showList"><span id="showList"> </span> </p>
+
+        <!-- Lista de selección -->
+        Choose a role
+        <select id="employee_role">
+            <!-- Opciones de la lista -->
+            <option value="Thief">Thief</option>
+            <option value="Burglar">Burglar</option>
+            <option value="Mage">Mage</option>
+        </select>
+        <button id="button" onclick="readPerRole()">Show</button>
+    </div>
+
+    <h3>
+        <p class="Id_employee"><span id="fullInfo"> </span> </p>
+        <p class="Name_employee"><span id="name"> </span></p>
+        <p class="Role_employee"> <span id="role"> </span></p>
+        <p class="Role_employee"><span id="erase_repeated_results"></span> </span></p>
+        <p class="Role_employee"><span id="sameRoles"></span> </span></p>
+
+        <p class="data"><span id="data"> </span> </p>
+    </h3>
+
+    <h2>
+        <br />
+        <p class="Error_response"> <span id="error"> </span></p>
+    </h2>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="HTTP_Service.js"></script>
+</body>
+
+</html>
+
+<!--
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset='utf-8'>
+    <title>Restproject</title>
+
+</head>
+
+
+<body>
+
+    <h1>Introduce tu nombre: </h1>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="restproject.js"></script>
+
+    <input id="nombre" type="text" placeholder="Nombre" />
+
+    <button type="button" onclick="enter()">Enter</button>
+
+    <ul id="printName"></ul>
+
+
+
+</body>
+
+</html>
+-->
